@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="whole">
+  <slide></slide>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <view>
+    <image bindtap="nav" src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2181944231,3260797126&fm=26&gp=0.jpg'></image>
+    </view>
+    <view class="usermotto">
+      <text bindtap="slide" class="user-motto">{{motto}}</text>
+    </view>
+  </view>
+  <nav></nav>
+</view>

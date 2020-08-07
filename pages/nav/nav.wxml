@@ -1,0 +1,11 @@
+<!--nav.wxml-->
+<view  class="footer"  bindtap="way(../index/index)">
+    <view class="footer_align">
+        <iconfont name="daohangshouye"></iconfont>
+        <text>首页</text>
+    </view>
+    <view class="footer_align" bindtap="way">
+        <iconfont name="wode2"></iconfont>
+        <text>我的</text>
+    </view>
+</view>
